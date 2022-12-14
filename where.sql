@@ -49,7 +49,7 @@ AND datediff(dtEstimativaEntrega, dtAprovado) > 30
 -- COMMAND ----------
 
 SELECT *,
-       datediff(dtEstimativaEntrega, dtAprovado)
+       datediff(dtEstimativaEntrega, dtAprovado) AS diffDataAprovadoEEstimativaDeEntrega
 
 FROM silver_olist.pedido
 
